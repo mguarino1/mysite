@@ -70,6 +70,7 @@ function Projects() {
             )}
           </p>
         ))}
+        <p style={{ paddingTop: "50px" }}>...and more coming soon!</p>
       </div>
     </div>
   );

@@ -109,6 +109,10 @@ html, body, .layout {
     user-select: none;
 }
 
+.contentBody a {
+    text-decoration: none;
+}
+
 .aboutFooter a:visited{
     color: rgb(0, 0, 102);
 }
