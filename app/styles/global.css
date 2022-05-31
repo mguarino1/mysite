@@ -111,18 +111,20 @@ html, body, .layout {
 
 .contentBody a {
     text-decoration: none;
+    color: rgb(14, 14, 122);
 }
 
-.aboutFooter a:visited{
-    color: rgb(0, 0, 102);
+.contentBody a:visited {
+    text-decoration: none;
+    color: rgb(14, 14, 122);
+}
+
+.contentBody a:hover {
+    color:rgb(107, 107, 185);
 }
 
 .projectTile {
     padding-bottom: 10px;
-}
-
-.projectTile a:visited {
-    color: rgb(0, 0, 102);
 }
 
 .projectList {

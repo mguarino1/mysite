@@ -4,7 +4,14 @@ import globalStylesUrl from "~/styles/global.css";
 export const links = () => [{ rel: "stylesheet", href: globalStylesUrl }];
 
 export const meta = () => {
-  const description = "Michael Guarino";
+  const description =
+    "I'm Michael and I'm a software developer from New York, USA. I \
+  graduated from Marist College with a Bachelor's in Computer Science in \
+  2020. I use this website to host my projects as well as contact information in case you'd like to reach \
+  out. I have experience developing web applications with modern front-end \
+  frameworks like React and back-end environments like Node.js. I enjoy \
+  building out full stack projects using langugages like Javascript, \
+  Typescript, Python, and SQL.";
   const keywords = "Michael Guarino";
   return {
     description,

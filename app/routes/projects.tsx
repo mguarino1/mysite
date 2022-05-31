@@ -52,8 +52,9 @@ function Projects() {
               <p>
                 [
                 <a href={p.github} target="_blank" rel="noreferrer">
-                  github|
-                </a>
+                  github
+                </a>{" "}
+                |{" "}
                 <a href={p.demo} target="_blank" rel="noreferrer">
                   demo
                 </a>
