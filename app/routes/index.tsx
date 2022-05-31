@@ -14,10 +14,10 @@ function Home() {
         </p>
         <p className="contentBody">
           I have experience developing web applications with modern front-end
-          frameworks like React and back-end environments like Node.js. I enjoy
-          building out full stack projects using langugages like Javascript,
-          Typescript, Python, and SQL. Feel free to look at my projects or go to
-          my Github to see anything I don't have on here.
+          frameworks like React and enjoy working on personal projects using
+          langugages like Javascript(Typescript) and Python. Feel free to look
+          at my projects or go to my Github to see anything I don't have on
+          here.
         </p>
       </div>
     </div>
