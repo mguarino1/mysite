@@ -61,18 +61,16 @@ function Layout({ children }: Props) {
       <header className="header">
         <div className="headerContent">
           <h1>Michael Guarino</h1>
-          <ul className="nav">
-            <li>
-              <Link to="/" className="navLinks">
-                about
-              </Link>
-            </li>
-            <li>
-              <Link to="/projects" className="navLinks">
-                projects
-              </Link>
-            </li>
-            {/* <li>
+          <div className="nav">
+            <Link to="/" className="navLinks">
+              about
+            </Link>
+
+            <Link to="/projects" className="navLinks">
+              projects
+            </Link>
+
+            {/* 
               <a
                 href="/files/resume.pdf"
                 className="navLinks"
@@ -81,13 +79,12 @@ function Layout({ children }: Props) {
               >
                 resume
               </a>
-            </li> */}
-            <li>
-              <Link to="/contact" className="navLinks">
-                contact
-              </Link>
-            </li>
-          </ul>
+             */}
+
+            <Link to="/contact" className="navLinks">
+              contact
+            </Link>
+          </div>
         </div>
       </header>
       <div className="contentView">{children}</div>

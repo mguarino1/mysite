@@ -8,7 +8,6 @@
 
 html, body, .layout {
     height: 100%;
-    width: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
@@ -16,6 +15,7 @@ html, body, .layout {
 
 .layout {
     display: flex;
+    flex: auto;
     flex-direction: column;
 }
 
@@ -26,16 +26,39 @@ html, body, .layout {
     background-color: #faf1da;
     display: flex;
     height: 250px;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 620px) {
+    .contentView {
+        overflow-y: scroll;
+    }
+    .headerContent {
+        align-items: center;
+    }
+    .headerContent h1 {
+        margin-bottom: 10px;
+    }
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navLinks {
+        margin-bottom: 10px;
+        width: 300px;
+    }
 }
 
 .headerContent {
-    padding-left: 350px;
-    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .headerContent h1 {
-    padding-bottom: 15px;
     font-size: 30pt;
     cursor: default;
     user-select: none;
@@ -43,8 +66,7 @@ html, body, .layout {
 
 .nav {
     display: flex;
-    list-style: none;
-    padding-left: 150px;
+    justify-content: space-around;
 }
 
 .navLinks {
@@ -54,8 +76,7 @@ html, body, .layout {
     text-decoration: none;
     font-size: 14pt;
     height: 40px;
-    width: 86px;
-    margin-right: 50px;
+    min-width: 86px;
     border: 1px solid #e7c8a0;
     border-radius: 3px;
     user-select: none;
@@ -92,6 +113,12 @@ html, body, .layout {
     justify-content: flex-start;
     padding: 25px 50px;
     position: relative;
+}
+
+@media only screen and (max-width:620px) {
+    .contentBox {
+        width: 100%;
+    }
 }
 
 .contentHeaders {
