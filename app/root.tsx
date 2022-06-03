@@ -1,5 +1,6 @@
 import { Outlet, LiveReload, Link, Links, Meta } from "@remix-run/react";
 import globalStylesUrl from "~/styles/global.css";
+//import { useEffect, useState } from "react";
 
 export const links = () => [{ rel: "stylesheet", href: globalStylesUrl }];
 
@@ -56,10 +57,27 @@ function Document({ children }: Props) {
 }
 
 function Layout({ children }: Props) {
+  // const [dark, setDark] = useState(false);
+
+  // function setDarkMode() {
+  //   setDark((prev) => !prev);
+  //   console.log("hello");
+  // }
+
+  // useEffect(() => {
+  //   setDarkMode();
+  // }, []);
+
   return (
     <div className="layout">
       <header className="header">
         <div className="headerContent">
+          {/* <div className="toggleButton" onClick={setDarkMode}>
+            <div
+              className={dark ? "switchOn" : "switchOff"}
+              onClick={setDarkMode}
+            ></div>
+          </div> */}
           <h1>Michael Guarino</h1>
           <div className="nav">
             <Link to="/" className="navLinks">
