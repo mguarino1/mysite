@@ -17,6 +17,13 @@ export const loader = () => {
         github: "https://github.com/mguarino1/MusicRef",
         demo: "https://music-ref.vercel.app/",
       },
+      {
+        id: 3,
+        name: "Web Chat",
+        description: "Basic slack clone built with React and Firebase",
+        github: "https://github.com/mguarino1/WebChat",
+        demo: "https://web-chat-six.vercel.app/",
+      },
     ],
   };
   return data;
